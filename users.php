@@ -7,6 +7,7 @@
 
 // $row = $result -> fetch_array(MYSQLI_ASSOC);
     $usersData = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
  ?>
   <!-- Content Wrapper. Contains page content -->
   <!-- Content Wrapper. Contains page content -->
@@ -63,6 +64,7 @@
                     <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
                     <div class="input-group-append">
+                     
                       <button type="submit" class="btn btn-default">
                         <i class="fas fa-search"></i>
                       </button>
