@@ -27,6 +27,11 @@
                   <?php echo $_SESSION['error_email_msg'] ?> 
               </div>
             <?php } ?>
+             <?php if(isset($_SESSION['success_msg'])){ ?>
+              <div class="alert alert-success">
+                  <?php echo $_SESSION['success_msg'] ?> 
+              </div>
+            <?php } ?>
               <form action="event_submit.php" method="post">
                 
                 <div class="card-body">

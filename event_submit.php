@@ -10,5 +10,17 @@
   $startDate =  date('Y-m-d H:i:s',strtotime($eventArray[0]));// strtotime convert date into unix time stamp
 
   $endDate = date('Y-m-d H:i:s',strtotime($eventArray[1]));
+  $sql = "insert into tbl_event (event_name, event_start_datetime, event_end_datetime) VALUES('$event_name', '$startDate',  '$endDate')";
+
+  if($conn->query($sql)=== TRUE){
+	  	$_SESSION['success_msg'] = 'Event Added Successfully';
+	  	header('location:event.php');
+	  	exit();
+  }
+   else {
+		$_SESSION['error_email_msg'] = $conn->error;
+	  	header('location:event.php');
+	  	exit();
   
+}
 ?>

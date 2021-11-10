@@ -97,7 +97,7 @@
 
         <!--   menu for event -->
          <li class="nav-item">
-          <a href="event.php" class="nav-link">
+          <a href="event_list.php" class="nav-link">
             <i class="far fa-circle nav-icon"></i>
             <p>Manage Event</p>
           </a>
