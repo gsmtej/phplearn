@@ -59,7 +59,9 @@
               <div class="card-header">
                 <h3 class="card-title">Users</h3>
 
+                 <span class="pull-right"><a href="export.php"><button class="btn btn-primary">Export User</button></a></span>
                 <div class="card-tools">
+
                   <div class="input-group input-group-sm" style="width: 150px;">
                     <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
